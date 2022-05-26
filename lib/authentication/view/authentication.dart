@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 
 class PageGetStared extends StatefulWidget {
   @override
-  _PageGetStaredState createState() => _PageGetStaredState();
+  PageGetStaredState createState() => PageGetStaredState();
 }
 
-class _PageGetStaredState extends State<PageGetStared>
+class PageGetStaredState extends State<PageGetStared>
     with SingleTickerProviderStateMixin {
   late List<Widget> tabList;
   late TabController tabController;
 
   TextEditingController signUpEmail =
-      TextEditingController(text: "ahmeteminkara@github.com");
+      TextEditingController(text: "email@email.com");
   TextEditingController signUpUsername =
-      TextEditingController(text: "ahmeteminkara");
-  TextEditingController signUpPass =
-      TextEditingController(text: "ahmeteminkara");
+      TextEditingController(text: "username");
+  TextEditingController signUpPass = TextEditingController(text: "password");
 
   @override
   void initState() {
